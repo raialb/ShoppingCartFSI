@@ -19,7 +19,7 @@ public:
     }
 };
 
-class ShoppingCartExtra:public ShoppingCart {
+class ShoppingCartExt:public ShoppingCart {
 public:
     using ShoppingCart::addToCart;
 
@@ -62,8 +62,9 @@ public:
 int main() {    // test class
 
     ShoppingCart test;
-    ShoppingCartExtra test1;
+    ShoppingCartExt test1;
     test.addToCart("CD");
+    test1.addToCart("Eraser");   // test to see that ShoppingCartExt can also add a single item
     //test.addToCart("0");       // can submit unwanted characters, numbers, etc
     test1.addToCart("Book", "Magazine");
     test1.addToCart("Pen", "Paper", "Pencil");
