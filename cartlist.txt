@@ -1,0 +1,6 @@
+Pencil
+Paper
+Pen
+Magazine
+Book
+CD
